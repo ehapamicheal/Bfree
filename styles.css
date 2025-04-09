@@ -1918,17 +1918,6 @@
 
     /* CREATE CARD MODAL */
 
-    .mobile_create_card_container {
-        position: fixed;
-        bottom: 0;
-        z-index: 50;
-        background: var(--white-color);
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 30rem;
-        height: 500px;
-        border-radius: var(--border-radius-0-4);
-    } 
-
     .create_card_overlay {
         display: none;
         position: fixed;
@@ -1940,7 +1929,7 @@
         z-index: 30;
     }
 
-    .mobile_create_card_container {
+    /* .mobile_create_card_container {
         position: fixed;
         top: 52%;
         left: 50%;
@@ -1957,6 +1946,29 @@
     
     .mobile_create_card_container.active {
         transform: translate(-50%, -50%);
+        opacity: 1;
+    } */
+
+    .mobile_create_card_container {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: translateY(100%);
+        transition: transform 0.4s ease, opacity 0.4s ease;
+        opacity: 0;
+        z-index: 50;
+        background: var(--white-color);
+        width: 100%;
+        height: 90vh; /* or 80vh depending on your preference */
+        border-radius: var(--border-radius-0-4) var(--border-radius-0-4) 0 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        /* padding-bottom: 2rem; */
+    }
+
+    .mobile_create_card_container.active {
+        transform: translateY(0);
         opacity: 1;
     }
 
@@ -1993,7 +2005,8 @@
         row-gap: 1rem;
         overflow-y: auto;
         height: 410px;
-        padding-bottom: 0.8rem;
+        /* padding-bottom: 0.8rem; */
+        padding-bottom: 3rem;
         padding-right: 0.6rem;
         padding-left: 0.6rem;
     }
