@@ -1,0 +1,571 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bfree Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+     
+   
+
+    <!-- MOBILE DASHBOARD VIEW -->
+    <div class="mobile_dashboard_view">
+
+        <!-- TOP NAVBAR -->
+        <div class="mobile_header_container" >
+            <div class="mobile_nav_main">
+                <a class="logo_mag" href="index.html">
+                    <img src="images/Group 1000004706.png" alt="bfree logo">
+                </a>
+
+                <div class="mobile_avatar_box">
+                    <h4>$200.00</h4>
+                    <svg class="user_icon" id="userIcon" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.6666 1.83122e-10C18.8553 -1.02594e-05 21.0226 0.431077 23.0447 1.26865C25.0668 2.10622 26.9041 3.33388 28.4518 4.88152C29.9994 6.42916 31.2271 8.26648 32.0647 10.2886C32.9023 12.3107 33.3334 14.4779 33.3334 16.6666C33.3334 25.8714 25.8714 33.3334 16.6666 33.3334C7.46195 33.3334 0 25.8714 0 16.6666C0 7.46195 7.46195 1.83122e-10 16.6666 1.83122e-10ZM18.3334 18.3334H15C10.8738 18.3334 7.33141 20.8323 5.80352 24.3996C8.22102 27.7895 12.1857 30 16.6666 30C21.1476 30 25.1123 27.7895 27.5298 24.3994C26.002 20.8323 22.4595 18.3334 18.3334 18.3334ZM16.6666 5C13.9052 5 11.6666 7.2386 11.6666 10C11.6666 12.7614 13.9052 15 16.6666 15C19.428 15 21.6666 12.7614 21.6666 10C21.6666 7.2386 19.4281 5 16.6666 5Z" fill="#001F8B"/>
+                    </svg>
+                        
+    
+                    <div class="mobile_profile-con" id="mobileProfileCon">
+                        <a href="profile.html">Profile</a>
+                        <a href="security.html">Change Password</a>
+                        <a href="https://bfree.cards">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="edit_container">
+            <div class="edit_main">
+                <div class="edit">
+                    <h1>Edit Profile</h1>
+                    
+                </div>
+        
+                <form action="">
+                    <div class="form_container">
+                        <div class="password">
+                            <div class="password_box">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.0137 19.8672C18.0137 14.9754 14.0244 11.0098 9.10351 11.0098C4.18258 11.0098 0.193359 14.9754 0.193359 19.8672H18.0137Z" fill="black"/>
+                                    <path d="M9.1038 9.51102C11.7154 9.51102 13.8326 7.40639 13.8326 4.8102C13.8326 2.214 11.7154 0.109375 9.1038 0.109375C6.49216 0.109375 4.375 2.214 4.375 4.8102C4.375 7.40639 6.49216 9.51102 9.1038 9.51102Z" fill="black"/>
+                                </svg>     
+                            </div>
+        
+                            <input type="text" placeholder="First name" required>   
+                        </div> 
+        
+                        <div class="password">
+                            <div class="password_box">
+                                <svg width="19" height="20" viewBox="0 0 19 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.0137 19.8672C18.0137 14.9754 14.0244 11.0098 9.10351 11.0098C4.18258 11.0098 0.193359 14.9754 0.193359 19.8672H18.0137Z" fill="black"/>
+                                    <path d="M9.1038 9.51102C11.7154 9.51102 13.8326 7.40639 13.8326 4.8102C13.8326 2.214 11.7154 0.109375 9.1038 0.109375C6.49216 0.109375 4.375 2.214 4.375 4.8102C4.375 7.40639 6.49216 9.51102 9.1038 9.51102Z" fill="black"/>
+                                </svg> 
+                            </div>
+        
+                            <input type="text" placeholder="Last name" required>   
+                        </div> 
+        
+                        <div class="password">
+                            <div class="password_box">
+                                <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.334 0.666992H2.66732C1.65898 0.666992 0.843151 1.49199 0.843151 2.50033L0.833984 13.5003C0.833984 14.5087 1.65898 15.3337 2.66732 15.3337H17.334C18.3423 15.3337 19.1673 14.5087 19.1673 13.5003V2.50033C19.1673 1.49199 18.3423 0.666992 17.334 0.666992ZM17.334 4.33366L10.0007 8.91699L2.66732 4.33366V2.50033L10.0007 7.08366L17.334 2.50033V4.33366Z" fill="black"/>
+                                </svg>
+                            </div>
+        
+                            <input type="email" placeholder="Email Address" required>   
+                        </div> 
+                        
+        
+                        <div class="password">
+                            <div class="password_box">
+                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.1751 18.854C12.3857 22.6316 -2.99387 7.16993 1.11409 1.54601C1.30698 1.28192 1.59695 1.10442 1.91302 1.02124L4.90428 0.234074C5.44146 0.0927224 6.0043 0.347412 6.25279 0.844174L7.85128 4.04095C8.02193 4.38203 8.01594 4.78491 7.83567 5.12108L6.58361 7.45349C6.33876 7.90962 6.42173 8.47246 6.78783 8.83856L10.9706 13.0214C11.328 13.3787 11.8737 13.4672 12.3256 13.2412L14.7448 12.0315C15.0606 11.8737 15.4308 11.8662 15.7524 12.0114L18.7347 13.3573C19.2255 13.5789 19.5026 14.1051 19.407 14.6348C19.1898 15.8399 18.9571 17.1296 18.8243 17.8665C18.7514 18.2706 18.5187 18.6299 18.1751 18.854Z" fill="black"/>
+                                </svg>    
+                            </div>
+        
+                            <input type="number" placeholder="Phone number" required>   
+                        </div>
+                        <div class="password">
+                            <div class="password_box">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C8.13 2 5 5.13 5 9C5 13.5 12 22 12 22C12 22 19 13.5 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" fill="black"/>
+                                </svg>
+                                   
+                            </div>
+        
+                            <input type="text" placeholder="Address" required>   
+                        </div>
+        
+                        <div class="password">
+                            <select name="country">
+                                <option value="">country</option>
+                                <option value="Nigeria">Nigeria</option>
+                                <option value="Afghanistan">Afghanistan</option>
+                                <option value="Aland Islands">Aland Islands</option>
+                                <option value="Albania">Albania</option>
+                                <option value="Algeria">Algeria</option>
+                                <option value="American Samoa">American Samoa</option>
+                                <option value="Andorra">Andorra</option>
+                                <option value="Angola">Angola</option>
+                                <option value="Anguilla">Anguilla</option>
+                                <option value="Antarctica">Antarctica</option>
+                                <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Armenia">Armenia</option>
+                                <option value="Aruba">Aruba</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Austria">Austria</option>
+                                <option value="Azerbaijan">Azerbaijan</option>
+                                <option value="Bahamas">Bahamas</option>
+                                <option value="Bahrain">Bahrain</option>
+                                <option value="Bangladesh">Bangladesh</option>
+                                <option value="Barbados">Barbados</option>
+                                <option value="Belarus">Belarus</option>
+                                <option value="Belgium">Belgium</option>
+                                <option value="Belize">Belize</option>
+                                <option value="Benin">Benin</option>
+                                <option value="Bermuda">Bermuda</option>
+                                <option value="Bhutan">Bhutan</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Bonaire, Sint Eustatius and Saba">Bonaire, Sint Eustatius and Saba</option>
+                                <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                <option value="Botswana">Botswana</option>
+                                <option value="Bouvet Island">Bouvet Island</option>
+                                <option value="Brazil">Brazil</option>
+                                <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                <option value="Brunei Darussalam">Brunei Darussalam</option>
+                                <option value="Bulgaria">Bulgaria</option>
+                                <option value="Burkina Faso">Burkina Faso</option>
+                                <option value="Burundi">Burundi</option>
+                                <option value="Cambodia">Cambodia</option>
+                                <option value="Cameroon">Cameroon</option>
+                                <option value="Canada">Canada</option>
+                                <option value="Cape Verde">Cape Verde</option>
+                                <option value="Cayman Islands">Cayman Islands</option>
+                                <option value="Central African Republic">Central African Republic</option>
+                                <option value="Chad">Chad</option>
+                                <option value="Chile">Chile</option>
+                                <option value="China">China</option>
+                                <option value="Christmas Island">Christmas Island</option>
+                                <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Comoros">Comoros</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Congo, Democratic Republic of the Congo">Congo, Democratic Republic of the Congo</option>
+                                <option value="Cook Islands">Cook Islands</option>
+                                <option value="Costa Rica">Costa Rica</option>
+                                <option value="Cote D'Ivoire">Cote D'Ivoire</option>
+                                <option value="Croatia">Croatia</option>
+                                <option value="Cuba">Cuba</option>
+                                <option value="Curacao">Curacao</option>
+                                <option value="Cyprus">Cyprus</option>
+                                <option value="Czech Republic">Czech Republic</option>
+                                <option value="Denmark">Denmark</option>
+                                <option value="Djibouti">Djibouti</option>
+                                <option value="Dominica">Dominica</option>
+                                <option value="Dominican Republic">Dominican Republic</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Egypt">Egypt</option>
+                                <option value="El Salvador">El Salvador</option>
+                                <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                <option value="Eritrea">Eritrea</option>
+                                <option value="Estonia">Estonia</option>
+                                <option value="Ethiopia">Ethiopia</option>
+                                <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                                <option value="Faroe Islands">Faroe Islands</option>
+                                <option value="Fiji">Fiji</option>
+                                <option value="Finland">Finland</option>
+                                <option value="France">France</option>
+                                <option value="French Guiana">French Guiana</option>
+                                <option value="French Polynesia">French Polynesia</option>
+                                <option value="French Southern Territories">French Southern Territories</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Gambia">Gambia</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Ghana">Ghana</option>
+                                <option value="Gibraltar">Gibraltar</option>
+                                <option value="Greece">Greece</option>
+                                <option value="Greenland">Greenland</option>
+                                <option value="Grenada">Grenada</option>
+                                <option value="Guadeloupe">Guadeloupe</option>
+                                <option value="Guam">Guam</option>
+                                <option value="Guatemala">Guatemala</option>
+                                <option value="Guernsey">Guernsey</option>
+                                <option value="Guinea">Guinea</option>
+                                <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                <option value="Guyana">Guyana</option>
+                                <option value="Haiti">Haiti</option>
+                                <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                                <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                                <option value="Honduras">Honduras</option>
+                                <option value="Hong Kong">Hong Kong</option>
+                                <option value="Hungary">Hungary</option>
+                                <option value="Iceland">Iceland</option>
+                                <option value="India">India</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                                <option value="Iraq">Iraq</option>
+                                <option value="Ireland">Ireland</option>
+                                <option value="Isle of Man">Isle of Man</option>
+                                <option value="Israel">Israel</option>
+                                <option value="Italy">Italy</option>
+                                <option value="Jamaica">Jamaica</option>
+                                <option value="Japan">Japan</option>
+                                <option value="Jersey">Jersey</option>
+                                <option value="Jordan">Jordan</option>
+                                <option value="Kazakhstan">Kazakhstan</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Kiribati">Kiribati</option>
+                                <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic of</option>
+                                <option value="Korea, Republic of">Korea, Republic of</option>
+                                <option value="Kosovo">Kosovo</option>
+                                <option value="Kuwait">Kuwait</option>
+                                <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                                <option value="Latvia">Latvia</option>
+                                <option value="Lebanon">Lebanon</option>
+                                <option value="Lesotho">Lesotho</option>
+                                <option value="Liberia">Liberia</option>
+                                <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                                <option value="Liechtenstein">Liechtenstein</option>
+                                <option value="Lithuania">Lithuania</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Macao">Macao</option>
+                                <option value="Macedonia, the Former Yugoslav Republic of">Macedonia, the Former Yugoslav Republic of</option>
+                                <option value="Madagascar">Madagascar</option>
+                                <option value="Malawi">Malawi</option>
+                                <option value="Malaysia">Malaysia</option>
+                                <option value="Maldives">Maldives</option>
+                                <option value="Mali">Mali</option>
+                                <option value="Malta">Malta</option>
+                                <option value="Marshall Islands">Marshall Islands</option>
+                                <option value="Martinique">Martinique</option>
+                                <option value="Mauritania">Mauritania</option>
+                                <option value="Mauritius">Mauritius</option>
+                                <option value="Mayotte">Mayotte</option>
+                                <option value="Mexico">Mexico</option>
+                                <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                                <option value="Moldova, Republic of">Moldova, Republic of</option>
+                                <option value="Monaco">Monaco</option>
+                                <option value="Mongolia">Mongolia</option>
+                                <option value="Montenegro">Montenegro</option>
+                                <option value="Montserrat">Montserrat</option>
+                                <option value="Morocco">Morocco</option>
+                                <option value="Mozambique">Mozambique</option>
+                                <option value="Myanmar">Myanmar</option>
+                                <option value="Namibia">Namibia</option>
+                                <option value="Nauru">Nauru</option>
+                                <option value="Nepal">Nepal</option>
+                                <option value="Netherlands">Netherlands</option>
+                                <option value="Netherlands Antilles">Netherlands Antilles</option>
+                                <option value="New Caledonia">New Caledonia</option>
+                                <option value="New Zealand">New Zealand</option>
+                                <option value="Nicaragua">Nicaragua</option>
+                                <option value="Niger">Niger</option>
+                                <option value="Niue">Niue</option>
+                                <option value="Norfolk Island">Norfolk Island</option>
+                                <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                <option value="Norway">Norway</option>
+                                <option value="Oman">Oman</option>
+                                <option value="Pakistan">Pakistan</option>
+                                <option value="Palau">Palau</option>
+                                <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                                <option value="Panama">Panama</option>
+                                <option value="Papua New Guinea">Papua New Guinea</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Peru">Peru</option>
+                                <option value="Philippines">Philippines</option>
+                                <option value="Pitcairn">Pitcairn</option>
+                                <option value="Poland">Poland</option>
+                                <option value="Portugal">Portugal</option>
+                                <option value="Puerto Rico">Puerto Rico</option>
+                                <option value="Qatar">Qatar</option>
+                                <option value="Reunion">Reunion</option>
+                                <option value="Romania">Romania</option>
+                                <option value="Russian Federation">Russian Federation</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Saint Barthelemy">Saint Barthelemy</option>
+                                <option value="Saint Helena">Saint Helena</option>
+                                <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                <option value="Saint Lucia">Saint Lucia</option>
+                                <option value="Saint Martin">Saint Martin</option>
+                                <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                                <option value="Samoa">Samoa</option>
+                                <option value="San Marino">San Marino</option>
+                                <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                                <option value="Saudi Arabia">Saudi Arabia</option>
+                                <option value="Senegal">Senegal</option>
+                                <option value="Serbia">Serbia</option>
+                                <option value="Serbia and Montenegro">Serbia and Montenegro</option>
+                                <option value="Seychelles">Seychelles</option>
+                                <option value="Sierra Leone">Sierra Leone</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Sint Maarten">Sint Maarten</option>
+                                <option value="Slovakia">Slovakia</option>
+                                <option value="Slovenia">Slovenia</option>
+                                <option value="Solomon Islands">Solomon Islands</option>
+                                <option value="Somalia">Somalia</option>
+                                <option value="South Africa">South Africa</option>
+                                <option value="South Georgia and the South Sandwich Islands">South Georgia and the South Sandwich Islands</option>
+                                <option value="South Sudan">South Sudan</option>
+                                <option value="Spain">Spain</option>
+                                <option value="Sri Lanka">Sri Lanka</option>
+                                <option value="Sudan">Sudan</option>
+                                <option value="Suriname">Suriname</option>
+                                <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                                <option value="Swaziland">Swaziland</option>
+                                <option value="Sweden">Sweden</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                                <option value="Taiwan, Province of China">Taiwan, Province of China</option>
+                                <option value="Tajikistan">Tajikistan</option>
+                                <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                                <option value="Thailand">Thailand</option>
+                                <option value="Timor-Leste">Timor-Leste</option>
+                                <option value="Togo">Togo</option>
+                                <option value="Tokelau">Tokelau</option>
+                                <option value="Tonga">Tonga</option>
+                                <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                <option value="Tunisia">Tunisia</option>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Turkmenistan">Turkmenistan</option>
+                                <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                <option value="Tuvalu">Tuvalu</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Ukraine">Ukraine</option>
+                                <option value="United Arab Emirates">United Arab Emirates</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="United States">United States</option>
+                                <option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Uzbekistan">Uzbekistan</option>
+                                <option value="Vanuatu">Vanuatu</option>
+                                <option value="Venezuela">Venezuela</option>
+                                <option value="Viet Nam">Viet Nam</option>
+                                <option value="Virgin Islands, British">Virgin Islands, British</option>
+                                <option value="Virgin Islands, U.s.">Virgin Islands, U.s.</option>
+                                <option value="Wallis and Futuna">Wallis and Futuna</option>
+                                <option value="Western Sahara">Western Sahara</option>
+                                <option value="Yemen">Yemen</option>
+                                <option value="Zambia">Zambia</option>
+                                <option value="Zimbabwe">Zimbabwe</option>
+                            </select>
+                        </div>
+                        <div class="password">
+
+        
+                            <input type="text" placeholder="State" required>   
+                        </div>
+        
+                       
+        
+                        <div style="display: flex; justify-content: center;" class="edit_button" ><button>Save</button></div>
+                     
+            
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- MOBILE FOOTER NAVBAR -->
+         <div class="mobile_footer_navbar" style="margin-top: 100px;">
+            <div class="mobile_footer_nav_main">
+                <a href="dashboard.html" class="active">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0004 0.398438L0.400391 9.36835H3.30385V23.5986H8.8377V16.6036C8.8377 15.478 9.72756 14.5572 10.8153 14.5572H13.1857C14.2734 14.5572 15.1633 15.478 15.1633 16.6036V23.5986H20.6971V9.36835H23.6003L12.0004 0.398438Z" fill="white"/>
+                        <path d="M20.6964 24H15.1626C14.9418 24 14.7626 23.8208 14.7626 23.6V16.6053C14.7626 15.6973 14.0549 14.9586 13.185 14.9586H10.8146C9.94475 14.9586 9.23675 15.6973 9.23675 16.6053V23.6C9.23675 23.8208 9.05782 24 8.83675 24H3.30344C3.08237 24 2.90344 23.8208 2.90344 23.6V9.76979H0.399979C0.22878 9.76979 0.0767802 9.66099 0.0215803 9.49912C-0.0338862 9.33725 0.0199803 9.15805 0.155447 9.05352L11.7554 0.0836005C11.8994 -0.0278668 12.1007 -0.0278668 12.2447 0.0836005L23.8447 9.05352C23.9799 9.15832 24.0338 9.33725 23.9786 9.49912C23.9231 9.66099 23.7711 9.76979 23.5999 9.76979H21.0964V23.6C21.0964 23.8208 20.9172 24 20.6964 24ZM15.5626 23.2H20.2964V9.36979C20.2964 9.14872 20.4757 8.96978 20.6964 8.96978H22.4287L11.9999 0.905472L1.57118 8.96978H3.30344C3.5245 8.96978 3.70344 9.14872 3.70344 9.36979V23.2H8.43702V16.6053C8.43702 15.2562 9.50368 14.1586 10.8149 14.1586H13.1853C14.4962 14.1586 15.5629 15.2562 15.5629 16.6053L15.5626 23.2Z" fill="white"/>
+                    </svg>
+                                             
+                    <h3>Home</h3>
+                </a>
+
+                <a href="">
+                    <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M23.9747 14.9029C22.3719 21.3315 15.8599 25.2437 9.42989 23.6408C3.0025 22.0381 -0.910205 15.5267 0.693442 9.09838C2.29549 2.66904 8.80742 -1.24377 15.2356 0.359167C21.6654 1.96184 25.5778 8.47384 23.9747 14.9029Z" fill="#A6A6A6"/>
+                        <path d="M17.6252 10.2904C17.8642 8.69364 16.6483 7.83524 14.9857 7.26271L15.525 5.09977L14.2083 4.77177L13.6832 6.87764C13.337 6.79151 12.9815 6.70991 12.6281 6.62937L13.157 4.50964L11.8411 4.18164L11.3013 6.34378C11.0149 6.27844 10.7335 6.21391 10.4604 6.14618L10.462 6.13951L8.6461 5.68618L8.29593 7.09231C8.29593 7.09231 9.27284 7.31631 9.25231 7.33018C9.7857 7.46325 9.88198 7.81604 9.86597 8.09604L9.25177 10.5601C9.28857 10.5694 9.33605 10.583 9.38859 10.604C9.34458 10.5931 9.29791 10.5811 9.24937 10.5696L8.3882 14.0214C8.32286 14.1835 8.15751 14.4265 7.78467 14.3342C7.79774 14.3534 6.8275 14.0953 6.8275 14.0953L6.17383 15.6025L7.88735 16.0297C8.20605 16.1097 8.51862 16.1931 8.82612 16.2718L8.28126 18.4595L9.59661 18.7875L10.1364 16.623C10.4956 16.7206 10.8445 16.8105 11.1859 16.8953L10.6479 19.0497L11.9646 19.3777L12.5095 17.1939C14.7548 17.6187 16.4432 17.4475 17.154 15.4169C17.7266 13.7819 17.1255 12.8387 15.944 12.2238C16.8044 12.0251 17.4522 11.4592 17.6252 10.2904ZM14.6166 14.5089C14.2097 16.1438 11.4566 15.26 10.5639 15.0385L11.2869 12.14C12.1796 12.3627 15.042 12.8038 14.6166 14.5089ZM15.0239 10.2667C14.6526 11.7539 12.3612 10.9984 11.6179 10.8131L12.2734 8.18432C13.0167 8.36965 15.4106 8.71551 15.0239 10.2667Z" fill="white"/>
+                    </svg>
+
+                    <h3>Crypto</h3>                              
+                </a>
+
+                <a href="" class="">
+                    <svg width="43" height="24" viewBox="0 0 43 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.35" d="M40.3617 0.743164H3.91197C2.72771 0.743164 1.76758 1.7033 1.76758 2.88756V3.22236V21.8562C1.76758 23.0405 2.72771 24.0003 3.91197 24.0003H40.3614C41.5457 24.0003 42.5058 23.0405 42.5058 21.8562V18.4924V2.88756C42.5058 1.7033 41.5457 0.743164 40.3617 0.743164Z" fill="#A6A6A6"/>
+                        <path d="M39.42 23.2574H2.97057C1.78631 23.2574 0.826172 22.2973 0.826172 21.113V2.1444C0.826172 0.960136 1.78631 0 2.97057 0H39.42C40.6043 0 41.5644 0.960136 41.5644 2.1444V21.113C41.5644 22.2976 40.6043 23.2574 39.42 23.2574Z" fill="#A6A6A6"/>
+                        <path d="M41.5644 2.1444C41.5644 0.960136 40.6043 0 39.42 0H2.97057C1.78631 0 0.826172 0.960136 0.826172 2.1444V2.4792C5.28707 2.68174 13.9338 4.14408 19.965 11.8869C26.9067 20.7984 36.2353 19.9271 41.5642 17.749V2.1444H41.5644Z" fill="#A6A6A6"/>
+                        <path d="M10.09 12.9667H5.0018C4.55106 12.9667 4.18555 12.6012 4.18555 12.1505V9.48617C4.18555 9.03544 4.55106 8.66992 5.0018 8.66992H10.09C10.5407 8.66992 10.9062 9.03544 10.9062 9.48617V12.1505C10.9062 12.6012 10.541 12.9667 10.09 12.9667Z" fill="white"/>
+                        <path d="M38.7599 4.15864H31.3923C31.2058 4.15864 31.0547 4.00756 31.0547 3.82107V2.403C31.0547 2.21651 31.2058 2.06543 31.3923 2.06543H38.7599C38.9463 2.06543 39.0974 2.21651 39.0974 2.403V3.82107C39.0974 4.00728 38.9463 4.15864 38.7599 4.15864Z" fill="white"/>
+                        <path d="M10.9579 16.6108H4.65305C4.25904 16.6108 3.93945 16.2912 3.93945 15.8972C3.93945 15.5032 4.25904 15.1836 4.65305 15.1836H10.9579C11.3519 15.1836 11.6715 15.5029 11.6715 15.8972C11.6715 16.2912 11.3519 16.6108 10.9579 16.6108Z" fill="white"/>
+                        <path d="M19.8836 16.6108H13.5788C13.1848 16.6108 12.8652 16.2912 12.8652 15.8972C12.8652 15.5032 13.1848 15.1836 13.5788 15.1836H19.8836C20.2777 15.1836 20.5972 15.5029 20.5972 15.8972C20.597 16.2912 20.2777 16.6108 19.8836 16.6108Z" fill="white"/>
+                        <path d="M28.8641 16.6108H22.5593C22.1653 16.6108 21.8457 16.2912 21.8457 15.8972C21.8457 15.5032 22.1653 15.1836 22.5593 15.1836H28.8641C29.2581 15.1836 29.5777 15.5029 29.5777 15.8972C29.5774 16.2912 29.2581 16.6108 28.8641 16.6108Z" fill="white"/>
+                        <path d="M37.7918 16.6108H31.487C31.093 16.6108 30.7734 16.2912 30.7734 15.8972C30.7734 15.5032 31.0927 15.1836 31.487 15.1836H37.7918C38.1859 15.1836 38.5054 15.5029 38.5054 15.8972C38.5054 16.2912 38.1861 16.6108 37.7918 16.6108Z" fill="white"/>
+                        <path d="M12.9415 21.4231H4.74022C4.50061 21.4231 4.30664 21.2289 4.30664 20.9895C4.30664 20.7499 4.50088 20.5557 4.74022 20.5557H12.9415C13.1811 20.5557 13.3754 20.7499 13.3754 20.9895C13.3754 21.2289 13.1811 21.4231 12.9415 21.4231Z" fill="white"/>
+                        <path d="M37.7791 21.4231H33.7324C33.4928 21.4231 33.2988 21.2289 33.2988 20.9895C33.2988 20.7499 33.4931 20.5557 33.7324 20.5557H37.7791C38.0187 20.5557 38.2127 20.7499 38.2127 20.9895C38.2127 21.2289 38.0187 21.4231 37.7791 21.4231Z" fill="white"/>
+                        <mask id="mask0_13104_91017" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="8" width="7" height="5">
+                        <path d="M10.0939 12.9882H5.00571C4.55497 12.9882 4.18945 12.6227 4.18945 12.172V9.50766C4.18945 9.05692 4.55497 8.69141 5.00571 8.69141H10.0939C10.5446 8.69141 10.9101 9.05692 10.9101 9.50766V12.172C10.9101 12.6227 10.5449 12.9882 10.0939 12.9882Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask0_13104_91017)">
+                        <path d="M5.40977 8.62012C6.00522 9.38518 6.94875 11.1214 5.33008 13.1037" stroke="#A6A6A6" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </g>
+                        <mask id="mask1_13104_91017" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="8" width="7" height="5">
+                        <path d="M10.0939 12.9882H5.00571C4.55497 12.9882 4.18945 12.6227 4.18945 12.172V9.50766C4.18945 9.05692 4.55497 8.69141 5.00571 8.69141H10.0939C10.5446 8.69141 10.9101 9.05692 10.9101 9.50766V12.172C10.9101 12.6227 10.5449 12.9882 10.0939 12.9882Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask1_13104_91017)">
+                        <path d="M3.75391 10.8076H6.21955" stroke="#A6A6A6" stroke-width="0.5" stroke-miterlimit="10"/>
+                        </g>
+                        <mask id="mask2_13104_91017" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="8" width="7" height="5">
+                        <path d="M10.0939 12.9882H5.00571C4.55497 12.9882 4.18945 12.6227 4.18945 12.172V9.50766C4.18945 9.05692 4.55497 8.69141 5.00571 8.69141H10.0939C10.5446 8.69141 10.9101 9.05692 10.9101 9.50766V12.172C10.9101 12.6227 10.5449 12.9882 10.0939 12.9882Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask2_13104_91017)">
+                        <path d="M9.49359 8.62012C8.89814 9.38518 7.95461 11.1214 9.57328 13.1037" stroke="#A6A6A6" stroke-width="0.5" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </g>
+                        <mask id="mask3_13104_91017" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="8" width="7" height="5">
+                        <path d="M10.0939 12.9882H5.00571C4.55497 12.9882 4.18945 12.6227 4.18945 12.172V9.50766C4.18945 9.05692 4.55497 8.69141 5.00571 8.69141H10.0939C10.5446 8.69141 10.9101 9.05692 10.9101 9.50766V12.172C10.9101 12.6227 10.5449 12.9882 10.0939 12.9882Z" fill="white"/>
+                        </mask>
+                        <g mask="url(#mask3_13104_91017)">
+                        <path d="M11.1495 10.8076H8.68359" stroke="#A6A6A6" stroke-width="0.5" stroke-miterlimit="10"/>
+                        </g>
+                    </svg>                        
+                        
+                    <h3>Cards</h3>
+                </a>
+
+                <a href="">
+                    <svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.8733 24.0002H2.12464C1.16819 24.0002 0.392578 23.2248 0.392578 22.2681V11.1324C0.392578 10.176 1.16792 9.40039 2.12464 9.40039H15.8736C16.8301 9.40039 17.6057 10.1757 17.6057 11.1324V22.2681C17.6054 23.2248 16.8301 24.0002 15.8733 24.0002Z" fill="#A6A6A6"/>
+                        <path d="M10.7279 15.2868C10.7279 14.2098 9.74341 13.363 8.62534 13.5967C7.97482 13.7327 7.44805 14.2573 7.30989 14.9076C7.1488 15.6656 7.48486 16.3612 8.05243 16.7332V19.2871C8.05243 19.8096 8.47598 20.2334 8.99874 20.2334C9.52124 20.2334 9.94505 19.8098 9.94505 19.2871V16.7332C10.4161 16.4244 10.7279 15.8923 10.7279 15.2868Z" fill="white"/>
+                        <path d="M14.8534 9.40496V5.37567C14.8534 2.40685 12.4465 0 9.47773 0H8.51435C5.54552 0 3.13867 2.40685 3.13867 5.37567V9.40496H5.27054V6.11315C5.27054 3.91433 7.053 2.13187 9.25182 2.13187C11.1682 2.13187 12.7215 3.68522 12.7215 5.60158V9.40496H14.8534Z" fill="#A6A6A6"/>
+                    </svg>                        
+
+                    <h3>Security</h3>                               
+                </a>
+            </div>
+        </div> 
+
+    </div>
+
+
+
+    <!-- swiper js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+    <!-- index.js script -->
+    <script src="index.js"></script>
+
+
+    <!-- MOBILE SWIPER CODE -->
+    <script>
+        let swiper2 = new Swiper('.swipe_main', {
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: '.next_btn',
+                prevEl: '.prev_btn',
+            },
+        });
+    </script>
+
+    <!-- MOBILE TRANSACTION FILTER -->
+    <script>
+        let filterButtons = document.querySelectorAll('.mobile_history_box button');
+        let transactions = document.querySelectorAll('.dashboard_transactions_wrapper .transaction');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', e => {
+                // Remove 'active' class from all buttons
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                // Add 'active' class to the clicked button
+                e.target.classList.add('active');
+
+                // Get the data-name attribute of the clicked button
+                let filterName = e.target.getAttribute('data-name');
+
+                // Show or hide transactions based on the filter
+                transactions.forEach(transaction => {
+                    if (filterName === 'all' || transaction.getAttribute('data-name') === filterName) {
+                        transaction.style.display = '';
+                    } else {
+                        transaction.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+        //hide card details
+        document.addEventListener("DOMContentLoaded", function() {
+            var accountHideElements = document.querySelectorAll("#account, #account1, #account2, #account3, #account5, #account6");
+            var cvvHideElements = document.querySelectorAll("#cvv, #cvv2, #cvv3");
+            var hide = document.getElementById('showText');
+            var eye = document.getElementById('eyeIconHide');
+            var isHidden = false;
+
+            document.getElementById("hideCardDetails").addEventListener("click", function() {
+                accountHideElements.forEach(function(element) {
+                    element.textContent = isHidden ? element.dataset.originalText : "8952";
+                });
+
+                cvvHideElements.forEach(function(element) {
+                    element.textContent = isHidden ? element.dataset.originalText : "123";
+                });
+
+                // Toggle eye icon and h3
+                if (isHidden) {
+                    hide.textContent = 'Show';
+                    eye.innerHTML = '<svg width="21" height="17" viewBox="0 0 21 17" fill="none" xmlns="http://www.w3.org/2000/svg" style="cursor: pointer;" onclick="togglePasswordVisibility()"><path d="M3.04557 16.1254C2.86791 16.1254 2.69024 16.0576 2.55491 15.922C2.28378 15.6511 2.28378 15.2116 2.55491 14.9407L17.2923 0.203346C17.5634 -0.0677819 18.0025 -0.0677819 18.2736 0.203346C18.5447 0.474242 18.5447 0.913783 18.2736 1.18468L3.53624 15.922C3.40091 16.0576 3.22324 16.1254 3.04557 16.1254Z" fill="black"/><path d="M5.85191 13.3118C5.73532 13.3118 5.6178 13.2824 5.51092 13.222C3.72569 12.2148 1.92542 10.6271 0.160317 8.5034C-0.0534389 8.24616 -0.0534389 7.87324 0.160317 7.61622C5.14171 1.62366 10.2385 0.0359883 15.3094 2.89717C15.4982 3.00382 15.6266 3.19259 15.656 3.40773C15.6854 3.62288 15.6125 3.83894 15.4589 3.99232L6.34281 13.1084C6.20933 13.2421 6.03166 13.3118 5.85191 13.3118ZM1.60386 8.0597C2.98541 9.655 4.3739 10.8917 5.74272 11.7458L13.803 3.68557C9.74648 1.83626 5.74272 3.27356 1.60386 8.0597Z" fill="black"/><path d="M7.9566 11.2101C7.77269 11.2101 7.59618 11.1372 7.46594 11.007C6.67939 10.2207 6.24609 9.17501 6.24609 8.06251C6.24609 5.76649 8.11414 3.89844 10.4102 3.89844C11.5088 3.89844 12.5454 4.32248 13.329 5.09283C13.4606 5.22238 13.5355 5.39866 13.5365 5.58327C13.5374 5.76788 13.4652 5.94531 13.3354 6.07648L8.44935 11.0049C8.31934 11.1358 8.1426 11.2099 7.95799 11.2103C7.95753 11.2101 7.95707 11.2101 7.9566 11.2101ZM10.4102 5.28646C8.87941 5.28646 7.63412 6.53175 7.63412 8.06251C7.63412 8.56567 7.76691 9.04824 8.01606 9.4702L11.797 5.6566C11.3795 5.41509 10.9043 5.28646 10.4102 5.28646Z" fill="black"/><path d="M10.4043 14.6C9.58263 14.6 8.76092 14.4841 7.93898 14.2519C7.57022 14.1478 7.35577 13.7642 7.45987 13.3952C7.56398 13.0265 7.94684 12.8113 8.31652 12.9164C11.8865 13.9248 15.5523 12.2929 19.2167 8.06244C18.2966 7.00014 17.3706 6.09283 16.458 5.36042C16.1591 5.12052 16.1112 4.68376 16.3511 4.38464C16.5912 4.08575 17.0282 4.03786 17.3269 4.27776C18.4364 5.16818 19.5579 6.29225 20.6602 7.61874C20.8742 7.87575 20.8742 8.2489 20.6602 8.50591C17.2913 12.5592 13.8515 14.6 10.4043 14.6Z" fill="black"/><path d="M10.4137 12.2293C10.3244 12.2293 10.2356 12.2263 10.1479 12.221C9.7653 12.1976 9.47404 11.8687 9.49741 11.4858C9.521 11.1037 9.85066 10.8129 10.2326 10.8355C10.2925 10.8392 10.3529 10.8413 10.4137 10.8413C11.9445 10.8413 13.1898 9.59603 13.1898 8.06527C13.1898 8.00281 13.1877 7.94081 13.1838 7.8795C13.159 7.4971 13.4489 7.16675 13.8313 7.142C14.2165 7.11817 14.5443 7.40711 14.569 7.78951C14.5748 7.88066 14.5778 7.9725 14.5778 8.06527C14.5778 10.3613 12.7098 12.2293 10.4137 12.2293Z" fill="black"/></svg>';
+                } else {
+                    hide.textContent = 'Hide';
+                    eye.innerHTML = '<svg width="21" height="14" viewBox="0 0 21 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.4609 13.1405C7.00435 13.1405 3.53925 11.0799 0.161097 7.01598C-0.053699 6.75748 -0.053699 6.38275 0.161097 6.12425C3.53925 2.06056 7.00435 0 10.4609 0C13.9171 0 17.3824 2.06056 20.7606 6.12425C20.9756 6.38275 20.9756 6.75748 20.7606 7.01598C17.3824 11.0797 13.9171 13.1405 10.4609 13.1405ZM1.6119 6.57011C4.5865 10.005 7.56157 11.7457 10.4609 11.7457C13.3604 11.7457 16.3352 10.0052 19.3098 6.57011C16.3352 3.13523 13.3604 1.39478 10.4609 1.39478C7.56157 1.39478 4.5865 3.13523 1.6119 6.57011Z" fill="black"/><path d="M10.4636 10.5288C8.28448 10.5288 6.51172 8.75599 6.51172 6.57688C6.51172 4.39777 8.28448 2.625 10.4636 2.625C12.6427 2.625 14.4155 4.39777 14.4155 6.57688C14.4155 8.75599 12.6427 10.5288 10.4636 10.5288ZM10.4636 4.01978C9.05371 4.01978 7.9065 5.16699 7.9065 6.57688C7.9065 7.98677 9.05371 9.13397 10.4636 9.13397C11.8735 9.13397 13.0207 7.98677 13.0207 6.57688C13.0207 5.16699 11.8735 4.01978 10.4636 4.01978Z" fill="black"/></svg>';
+                }
+
+                isHidden = !isHidden;
+            });
+
+            // Save original text content for reverting
+            accountHideElements.forEach(function(element) {
+                element.dataset.originalText = element.textContent;
+            });
+            cvvHideElements.forEach(function(element) {
+                element.dataset.originalText = element.textContent;
+            });
+        });
+
+
+    </script>
+<script>
+    document.getElementById("userIcon").addEventListener("click", function () {
+        var profileDropdown = document.getElementById("mobileProfileCon");
+        if (profileDropdown.style.display === "none" || profileDropdown.style.display === "") {
+            profileDropdown.style.display = "block";
+        } else {
+            profileDropdown.style.display = "none";
+        }
+    });
+
+    // Close dropdown when clicking outside
+    document.addEventListener("click", function (event) {
+        var profileDropdown = document.getElementById("mobileProfileCon");
+        var userIcon = document.getElementById("userIcon");
+
+        if (!profileDropdown.contains(event.target) && !userIcon.contains(event.target)) {
+            profileDropdown.style.display = "none";
+        }
+    });
+</script>
+
+    
+</body>
+</html>
