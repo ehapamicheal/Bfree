@@ -1978,20 +1978,15 @@
     }
     
     .mobile_create_card_container.active {
-        /* transform: translate(-50%, -50%); */
-        /* transform: translate(-50%, -50%); */
         bottom: 0;
-        /* top: 54%; */
         opacity: 1;
-        /* left: 50%;  */
-        /* transform: translate(-50%, -50%); */
-        /* height: 94%; */
+        height: 94%;
     }
 
     .mobile_create_card_container .mobile_create_card_main {
         padding: 1.5rem 1rem 1rem; 
-        height: 100%;
-        overflow: hidden;
+        /* height: 100%;
+        overflow: hidden; */
     }
 
     .mobile_create_card_container .mobile_create_card_main .head {
@@ -2015,7 +2010,7 @@
 
     .mobile_create_card_container .mobile_create_card_main .mobile_create_card_wrapper {
         margin-top: 1rem;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .mobile_create_card_container .mobile_create_card_main .mobile_create_card_wrapper .mobile_create_card_content {
@@ -2027,6 +2022,7 @@
         /* max-height: calc(100vh - 7rem); */
         /* max-height: calc(100vh - 7rem);
         max-height: calc(100dvh - 7rem); */
+        height: 400px;
         padding-bottom: 0.8rem;
         padding-right: 0.6rem;
         padding-left: 0.6rem;
