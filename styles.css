@@ -3158,7 +3158,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     } */
 
-    .card_funding_modal_container {
+    /* .card_funding_modal_container {
         position: fixed;
         top: 76%;
         left: 50%;
@@ -3177,7 +3177,7 @@
     .card_funding_modal_container.active {
         transform: translate(-50%, -50%);
         opacity: 1;
-    }
+    } */
 
     .fund_overlay {
         display: none;
@@ -3188,6 +3188,25 @@
         height: 100%;
         background: rgba(0, 0, 0, 0.5);
         z-index: 30;
+    }
+
+    .card_funding_modal_container {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        z-index: 50;
+        background: var(--white-color);
+        width: 30rem;
+        /* height: 250px; */
+        border-top-left-radius: var(--border-radius-0-4);
+        border-top-right-radius: var(--border-radius-0-4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .card_funding_modal_container.active {
+        bottom: 0;
+        opacity: 1;
     }
 /* 
     .view_master_card_details_container {
