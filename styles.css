@@ -1645,7 +1645,7 @@
     } */
 
     .swipe_main .swipe_wrapper .user_card_image {
-        background-image: url('./svgs/empty-card1.svg');
+        background-image: url('../svgs/empty-card1.svg');
         background-size: cover;
         width: 100%;
         height: 190px;
@@ -1918,6 +1918,17 @@
 
     /* CREATE CARD MODAL */
 
+    /* .mobile_create_card_container {
+        position: fixed;
+        bottom: 0;
+        z-index: 50;
+        background: var(--white-color);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 30rem;
+        height: 500px;
+        border-radius: var(--border-radius-0-4);
+    }  */
+
     .create_card_overlay {
         display: none;
         position: fixed;
@@ -1929,7 +1940,7 @@
         z-index: 30;
     }
 
-    .mobile_create_card_container {
+    /* .mobile_create_card_container {
         position: fixed;
         top: 52%;
         left: 50%;
@@ -1947,29 +1958,43 @@
     .mobile_create_card_container.active {
         transform: translate(-50%, -50%);
         opacity: 1;
-    }
-/* 
+    } */
+
     .mobile_create_card_container {
         position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: auto;
-        transform: translateY(100%);
-        transition: transform 0.4s ease, opacity 0.4s ease;
+        /* top: 52%; */
+        bottom: -100%;
+        /* transform: translateX(-50%, -50%); */
+        /* transform: translateX(-90%, -50%); */
+        /* left: 25%; */
+        /* left: 30%; */
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        /* transform: translate(-50%, 100%); */
+        /* transition: transform 0.4s ease, opacity 0.4s ease; */
+        left: 50%;
+        transform: translateX(-50%);
         opacity: 0;
         z-index: 50;
         background: var(--white-color);
-        width: 100%;
-        height: 90vh;
-        border-radius: var(--border-radius-0-4) var(--border-radius-0-4) 0 0;
+        width: 30rem;
+        /* height: 100%; */
+        /* height: 500px; */
+        border-top-right-radius: var(--border-radius-0-4);
+        border-top-left-radius: var(--border-radius-0-4);
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
-
+    
     .mobile_create_card_container.active {
-        transform: translateY(0);
+        /* transform: translate(-50%, -50%); */
+        /* transform: translate(-50%, -50%); */
+        bottom: 0;
+        /* top: 54%; */
         opacity: 1;
-    } */
+        /* left: 50%;  */
+        /* transform: translate(-50%, -50%); */
+        height: 94%;
+    }
 
     .mobile_create_card_container .mobile_create_card_main {
         padding: 1.5rem 1rem 1rem; 
@@ -2005,7 +2030,6 @@
         overflow-y: auto;
         height: 410px;
         padding-bottom: 0.8rem;
-        /* padding-bottom: 3rem; */
         padding-right: 0.6rem;
         padding-left: 0.6rem;
     }
@@ -2216,6 +2240,7 @@
     .mobile_create_card_content .card_creation_form .create_card_button {
         text-align: center;
         margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 
     .mobile_create_card_content .card_creation_form .create_card_button button {
@@ -2856,6 +2881,24 @@
         border-radius: 0.9rem;
         padding: 0.8rem 0.7rem 0.8rem;
         position: relative;
+    }
+
+    .details_card.frozen {
+        /* filter: blur(2px) grayscale(100%);
+        opacity: 0.7;
+        pointer-events: none;  */
+        background-color: #F899FA;
+    }
+
+    .veiw_card_details_container .veiw_card_details_wrapper .details_card .blur_main_box * {
+        transition: filter 0.3s ease;
+    }  
+ 
+    .open_fund_modal_container.disabled,
+    .open_card_details_modal.disabled {
+        pointer-events: none;
+        opacity: 0.4;
+        cursor: not-allowed;
     }
 
     .veiw_card_details_container .veiw_card_details_wrapper .details_card .main_box .box {
@@ -3595,12 +3638,39 @@
     .download_statement_container .mobile_statement_bg_image .table-box {
         border: 1px solid var(--secondary-color);
         margin-top: 2rem;
+        position: relative;
         /* overflow-x: auto; */
+        /* width: 100%; */
     }
 
-    .download_statement_container .mobile_statement_bg_image .table-box .table_scroll {
-        overflow-x: auto;
+    .stamp_wrapper {
+        position: absolute;
+        /* position: fixed; */
+        /* top: 2.5rem;
+        right: 6rem; */
+        z-index: 30;
+        /* top: 20%; */
+        top: 2.5rem;
+        right: 6rem;
     }
+
+    .stamp_wrapper .stamp_box {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.4rem;
+    }
+
+    .stamp_wrapper .stamp_box img {
+        width: 2.5rem;
+    }
+
+    /* .download_statement_container .mobile_statement_bg_image .table-box .table_scroll {
+        overflow-x: auto;
+    } */
+
+    /* .download_statement_container .mobile_statement_bg_image .table-box .table_scroll {
+        width: 100%;
+    } */
 
     .download_statement_container .mobile_statement_bg_image .table-box .duration_box {
         background: var(--secondary-color);
@@ -3609,7 +3679,7 @@
 
     .download_statement_container .mobile_statement_bg_image .table-box .duration_box p {
         font-weight: 400;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 100%;
         letter-spacing: 0.3px;
         color: var(--black);        
@@ -3622,14 +3692,13 @@
 
     .download_statement_container .mobile_statement_bg_image .table-box table tr th {
         font-weight: 700;
-        font-size: 17px;
+        font-size: 10px;
         line-height: 100%;
         letter-spacing: 0.3px;
         color: var(--black); 
         padding-top: 0.6rem; 
         padding-bottom: 0.6rem;    
         border-top: 2px solid var(--secondary-color); 
-        white-space: nowrap;
     }
 
     .download_statement_container .mobile_statement_bg_image .table-box table tr .day {
@@ -3667,11 +3736,10 @@
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 10px;
         line-height: 100%;
         letter-spacing: 0.3px;
         color: var(--black);      
-        white-space: nowrap;  
     }
 
     .download_statement_container .mobile_statement_bg_image .table-box table tbody tr .day_td {
@@ -3856,7 +3924,7 @@
     }
 
     /* MOBILE GET STATEMENT */
-    .download_statement_container .mobile_statement_bg_image .table-box table tr .day {
+    /* .download_statement_container .mobile_statement_bg_image .table-box table tr .day {
        min-width: 110px;
     }
 
@@ -3878,7 +3946,12 @@
 
     .download_statement_container .mobile_statement_bg_image .table-box table tr .amount_th {
         min-width: 120px;
+    } */
+
+    .stamp_wrapper {
+        right: 4.8rem;
     }
+
 
 
 }
@@ -3890,7 +3963,45 @@
     }
 }
 
+@media (max-width: 580px) {
+    .mobile_dashboard_container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tr .currency,
+    .download_statement_container .mobile_statement_bg_image .table-box table tr .amount_th {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tr .merchant,
+    .download_statement_container .mobile_statement_bg_image .table-box table tr .description {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+    
+    .download_statement_container .mobile_statement_bg_image .table-box table tr .day_td {
+        padding-right: 0.4rem;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tbody tr .merchant_td,
+    .download_statement_container .mobile_statement_bg_image .table-box table tbody tr .time_td {
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+    }
+
+    
+    .stamp_wrapper {
+        right: 4rem;
+    }
+
+
+}
+
 @media (max-width: 500px) {
+
     .mobile_create_card_container {
         width: 100%;
     }
@@ -3942,11 +4053,11 @@
 
 
     /*=============== MOBILE DASHBOARD PAGE ====================*/
-    .mobile_dashboard_container {
+    /* .mobile_dashboard_container {
         margin-top: 5rem;
         padding-left: 1.1rem;
         padding-right: 1.1rem;
-    }
+    } */
 
     .mobile_dashboard_container .dashboard_card_box {
         width: 100%;
@@ -3968,6 +4079,44 @@
         width: 100%;
     }
     /*============== MOBILE CARDS PAGE ENDS HERE ===================*/
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tbody tr td {
+        /* padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        font-weight: 400; */
+        font-size: 8px;
+        /* line-height: 100%;
+        letter-spacing: 0.3px;
+        color: var(--black);       */
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tr th {
+        font-size: 8px;
+        width: 100%;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box .duration_box {
+        background: var(--secondary-color);
+        padding: 0.4rem 0.4rem;
+        width: 100% ;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tr .day {
+        padding-right: 0.5rem;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tbody tr .currency_td {
+        text-align: center;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tr .currency {
+        width: 100%;
+    }
+
+    .stamp_wrapper {
+        right: 3rem;
+    }
+
 
 
 
@@ -4564,14 +4713,15 @@
         line-height: 100%;     
     }
 
-    .download_statement_container .mobile_statement_bg_image .table-box table tr th {
-        font-size: 15px;
-    }
-
+    .download_statement_container .mobile_statement_bg_image .table-box table tr th,
     .download_statement_container .mobile_statement_bg_image .table-box table tbody tr td {
-        font-size: 12px;
+        font-size: 6px;
     }
 
+    
+    .stamp_wrapper {
+        right: 2rem;
+    }
 
     /*============== MOBILE CARD DETAILS PAGE ENDS HERE ===================*/
 
@@ -4734,8 +4884,11 @@
 
     /* MOBILE GET STATEMENT */
     .download_statement_container .mobile_statement_bg_image .table-box .duration_box p {
-        font-size: 14px;
-        line-height: 18px;   
+        font-size: 12px;
+    }
+
+    .download_statement_container .mobile_statement_bg_image .table-box table tbody tr td {
+        font-size: 5px;
     }
 
     /*============== MOBILE CARDS PAGE ENDS HERE ===================*/
