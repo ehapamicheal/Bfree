@@ -3298,7 +3298,7 @@
 
 
     /* view details modal */
-    .view_master_card_details_container {
+    /* .view_master_card_details_container {
         position: fixed;
         top: 60%;
         left: 50%;
@@ -3318,6 +3318,41 @@
     .view_master_card_details_container.active {
         transform: translate(-50%, -50%);
         opacity: 1;
+    } */
+
+    .view_master_card_details_container {
+        /* position: fixed;
+        bottom: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        z-index: 50;
+        background: var(--white-color);
+        width: 30rem;
+        transition: bottom 0.4s ease, opacity 0.4s ease;
+        border-top-right-radius: var(--border-radius-0-4);
+        border-top-left-radius: var(--border-radius-0-4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem 1rem 1rem; */
+        position: fixed;
+        bottom: -100%;
+        left: 50%;
+        transform: translateX(-50%);
+        opacity: 0;
+        z-index: 50;
+        background: var(--white-color);
+        width: 30rem;
+        transition: bottom 0.4s ease, opacity 0.4s ease;
+        border-top-right-radius: var(--border-radius-0-4);
+        border-top-left-radius: var(--border-radius-0-4);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem 1rem 1rem;
+    }
+
+    .view_master_card_details_container.active {
+        bottom: 0;
+        opacity: 1;
+        height: 93%;
     }
 
     .view_master_card_details_container .view_top_box {
