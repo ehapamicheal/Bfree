@@ -2022,7 +2022,8 @@
         /* max-height: calc(100vh - 7rem); */
         /* max-height: calc(100vh - 7rem);
         max-height: calc(100dvh - 7rem); */
-        height: 400px;
+        /* height: 400px; */
+        max-height: calc(100vh - 100px);
         padding-bottom: 0.8rem;
         padding-right: 0.6rem;
         padding-left: 0.6rem;
