@@ -1964,14 +1964,6 @@
         position: fixed;
         /* top: 52%; */
         bottom: -100%;
-        /* transform: translateX(-50%, -50%); */
-        /* transform: translateX(-90%, -50%); */
-        /* left: 25%; */
-        /* left: 30%; */
-        /* left: 50%; */
-        /* transform: translate(-50%, -50%); */
-        /* transform: translate(-50%, 100%); */
-        /* transition: transform 0.4s ease, opacity 0.4s ease; */
         left: 50%;
         transform: translateX(-50%);
         opacity: 0;
@@ -1998,6 +1990,8 @@
 
     .mobile_create_card_container .mobile_create_card_main {
         padding: 1.5rem 1rem 1rem; 
+        height: 100%;
+        overflow: hidden;
     }
 
     .mobile_create_card_container .mobile_create_card_main .head {
@@ -2021,6 +2015,7 @@
 
     .mobile_create_card_container .mobile_create_card_main .mobile_create_card_wrapper {
         margin-top: 1rem;
+        overflow: hidden;
     }
 
     .mobile_create_card_container .mobile_create_card_main .mobile_create_card_wrapper .mobile_create_card_content {
@@ -2030,8 +2025,8 @@
         overflow-y: auto;
         /* height: 410px; */
         /* max-height: calc(100vh - 7rem); */
-        max-height: calc(100vh - 7rem);
-        max-height: calc(100dvh - 7rem);
+        /* max-height: calc(100vh - 7rem);
+        max-height: calc(100dvh - 7rem); */
         padding-bottom: 0.8rem;
         padding-right: 0.6rem;
         padding-left: 0.6rem;
