@@ -2028,7 +2028,8 @@
         flex-direction: column;
         row-gap: 1rem;
         overflow-y: auto;
-        height: 410px;
+        /* height: 410px; */
+        max-height: calc(100vh - 7rem);
         padding-bottom: 0.8rem;
         padding-right: 0.6rem;
         padding-left: 0.6rem;
@@ -5311,4 +5312,4 @@ margin-top: 20px;
         transition: var(--transition-200);
     }
 
-}
+}   
