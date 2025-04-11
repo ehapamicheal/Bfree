@@ -2029,7 +2029,9 @@
         row-gap: 1rem;
         overflow-y: auto;
         /* height: 410px; */
+        /* max-height: calc(100vh - 7rem); */
         max-height: calc(100vh - 7rem);
+        max-height: calc(100dvh - 7rem);
         padding-bottom: 0.8rem;
         padding-right: 0.6rem;
         padding-left: 0.6rem;
